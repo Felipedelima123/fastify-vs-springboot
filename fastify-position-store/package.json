@@ -1,0 +1,32 @@
+{
+  "name": "fastify-position-store",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon -w src --exec \"babel-node src/server.js\"",
+    "build": "babel src -s -D -d dist",
+    "start": "node dist/server --max-old-space-size=4096",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "fastify": "^3.2.1",
+    "pg": "^8.3.2",
+    "sequelize": "^6.3.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/plugin-transform-spread": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-mocha": "^9.0.0",
+    "nodemon": "^2.0.4"
+  }
+}
